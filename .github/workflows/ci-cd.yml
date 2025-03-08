@@ -27,7 +27,7 @@ jobs:
       - name: Move build output to docs folder
         run: |
           mkdir -p docs
-          cp -r dist/demo-app/* docs/
+          cp -r dist/demo-app/browser/* docs/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
